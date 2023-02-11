@@ -6,29 +6,31 @@ body {
   overflow: hidden;
   font-family: Roboto, sans-serif;
   display: flex;
+  flex: 1;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 img {
-  width: 500px;
+  width: 450px;
   margin-bottom: 16px;
 }
 
-button {
+.form {
+  display: flex;
+  flex-direction: column;
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
-  background: #eee;
-  padding: 8px 16px;
-  margin-bottom: 16px;
+  gap: 16px;
+  align-items: center;
 }
 
 input {
   border: 1px solid #ddd;
   border-radius: 16px;
   padding: 8px 24px;
-  width: 400px;
-  margin-bottom: 16px;
+  width: 200px;
 }
 
 .header {
@@ -47,11 +49,13 @@ input {
 .instructions {
   font-weight: 800;
   margin-bottom: 24px;
+  max-width: 600px;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   color: gray;
 }
 
@@ -61,4 +65,13 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.form input[type="number"] {
+  width: 200px;
+}
+
+.lastResult {
+  color: white;
+  padding: 3px;
 }
