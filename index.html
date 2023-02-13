@@ -22,9 +22,9 @@
       </div>
       <div class="form">
         <label for="guessField">Enter a guess: </label>
-        <input type="text" min="1" max="100" required id="guessField" class="guessField">
+        <input type="text" min="1" max="100" required id="guessField" class="guessField" onKeyDown="if(event.keyCode==13)document.click(guessSubmit);">
         <div class="buttons">
-          <input type="submit" value="Submit guess" class="guessSubmit">
+          <input type="submit" value="Submit guess" id="guessSubmit" class="guessSubmit">
           <input type="submit" value="Start over" onclick="resetGame();">
         </div>
       </div>
