@@ -32,6 +32,11 @@ input {
   width: 200px;
 }
 
+.buttons input {
+  color: #E5E7EB;
+  background-color: #3882f6;
+}
+
 .header {
   display: flex;
   padding: 10px;
@@ -43,6 +48,8 @@ input {
   display: flex;
   padding: 10px;
   justify-content: center;
+  color: #E5E7EB;
+  background-color: #3882f6;
 }
 
 .instructions {
