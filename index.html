@@ -18,7 +18,7 @@
     <div class="content">
       <img src="./assets/images/numbers.jpg" alt="Numbers on a blurred background.">
       <div class="instructions">
-        We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.
+        We have selected a random number between 1 and 100. See if you can guess it in 7 turns or fewer. We'll tell you if your guess was too high or too low.
       </div>
       <div class="form">
         <label for="guessField">Enter a guess: </label>
@@ -63,8 +63,8 @@
           lastResult.style.backgroundColor = 'green';
           lowOrHi.textContent = '';
           setGameOver();
-        } else if (guessCount === 10) {
-          lastResult.textContent = '!!!GAME OVER!!!';
+        } else if (guessCount === 7) {
+          lastResult.textContent = 'Game over. You are out of turns.';
           lowOrHi.textContent = '';
           setGameOver();
         } else {
