@@ -22,7 +22,7 @@
       </div>
       <div class="form">
         <label for="guessField">Enter a guess: </label>
-        <input type="text" min="1" max="100" required id="guessField" class="guessField" onKeyDown="if(event.keyCode==13)document.click(guessSubmit);">
+        <input type="text" min="1" max="100" required id="guessField" class="guessField" onKeyDown="if(event.keyCode==13) clickSubmit()" ;>
         <div class="buttons">
           <input type="submit" value="Submit guess" id="guessSubmit" class="guessSubmit">
           <input type="submit" value="Start over" onclick="resetGame();">
@@ -48,7 +48,7 @@
       const guessSubmit = document.querySelector('.guessSubmit');
       const guessField = document.querySelector('.guessField');
       let guessCount = 1;
-      let resetButton;
+      //let resetButton;
 
       function checkGuess() {
         const userGuess = Number(guessField.value);
@@ -84,13 +84,17 @@
 
       guessSubmit.addEventListener('click', checkGuess);
 
+      function clickSubmit() {
+        document.getElementById("guessSubmit").click();
+      }
+
       function setGameOver() {
         guessField.disabled = true;
         guessSubmit.disabled = true;
         //resetButton = document.createElement('button');
         //resetButton.textContent = 'Start over';
         //document.body.appendChild(resetButton);
-        resetButton.addEventListener('click', resetGame);
+        //resetButton.addEventListener('click', resetGame);
       }
 
       function resetGame() {
@@ -111,19 +115,6 @@
 
       guessField.focus();
 
-      // Automatic Enter: get the input field
-      var userInput = document.getElementById("guessField");
-
-      // Execute a function when the user presses a key on the keyboard
-      userInput.addEventListener("keypress", function (event) {
-        // If the user presses the "Enter" key on the keyboard
-        if (event.key === "Enter") {
-          // Cancel the default action, if needed
-          event.preventDefault();
-          // Trigger the button element with a click
-          document.getElementById("guessField").click(guessSubmit);
-        }
-      });
     </script>
   </body>
 </html>
