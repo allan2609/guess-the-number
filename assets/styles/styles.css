@@ -112,6 +112,10 @@ p {
   padding: 3px;
 }
 
+.resultParas {
+  margin-bottom: 1.5vh;
+}
+
 @media screen and (min-height: 1500px) {
   .header, .footer {
       height: 50px;
