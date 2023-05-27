@@ -13,8 +13,8 @@ body {
 }
 
 img {
-  max-width: 75vh;
-  max-height: 30vh;
+  max-width: 70vh;
+  max-height: 25vh;
   margin-bottom: 2%;
   border-radius: 16px;
 }
@@ -45,17 +45,17 @@ input {
 
 .header {
   display: flex;
-  padding: 10px;
+  padding: 2vh;
   justify-content: flex-end;
 }
 
 .footer {
   display: flex;
-  padding: 10px;
+  padding: 2vh;
   justify-content: center;
   color: #E5E7EB;
   background-color: #3882f6;
-  font-size: 14px;
+  font-size: 1em;
 }
 
 .instructions {
@@ -68,7 +68,7 @@ input {
 
 a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 1em;
   color: gray;
 }
 
