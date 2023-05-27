@@ -91,6 +91,7 @@ a {
 
 #guessSubmit, #startOver {
   align-content: center;
+  justify-content: center;
 }
 
 p {
@@ -170,6 +171,8 @@ p {
     font-size: 48px;
     width: 500px;
     height: 100px;
+    align-content: center;
+    justify-content: center;
   }
 
   .form input[type="number"] {
