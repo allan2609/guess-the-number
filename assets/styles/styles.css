@@ -13,8 +13,8 @@ body {
 }
 
 img {
-  max-width: 70vh;
-  max-height: 25vh;
+  width: 70vh;
+  height: 25vh;
   margin-bottom: 2%;
   border-radius: 16px;
 }
@@ -45,7 +45,7 @@ input {
 
 .header {
   display: flex;
-  padding: 1vh;
+  padding: 2vh 8vh;
   justify-content: flex-end;
 }
 
@@ -53,6 +53,7 @@ input {
   display: flex;
   padding: 1.5vh;
   justify-content: center;
+  align-items: center;
   color: #E5E7EB;
   background-color: #3882f6;
   font-size: 3vh;
@@ -64,11 +65,13 @@ input {
   max-width: 600px;
   text-align: center;
   font-size: 18px;
+  padding-left: 6vh;
+  padding-right: 6vh;
 }
 
 a {
   text-decoration: none;
-  font-size: 3vh;
+  font-size: 16px;
   color: gray;
 }
 
@@ -96,4 +99,11 @@ p {
 .lastResult {
   color: white;
   padding: 3px;
+}
+
+@media screen and (max-width: 1600px) {
+  .header, .footer, a {
+      height: 70px;
+      font-size: 24px;
+  }
 }
