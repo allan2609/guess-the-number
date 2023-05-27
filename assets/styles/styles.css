@@ -119,6 +119,12 @@ p {
     max-width: 80vh;
     font-size: 48px;
   }
+
+  .buttons {
+    display: flex;
+    width: 80%;
+    gap: 4%;
+  }
 }
 
 @media screen and (min-height: 1600px) {
@@ -136,12 +142,6 @@ p {
 }
 
 @media screen and (min-height: 1600px) {
-  .buttons input {
-    font-size: 48px;
-  }
-}
-
-@media screen and (min-height: 1600px) {
   .form {
     border-radius: 32px;
     font-size: 48px;
@@ -153,12 +153,14 @@ p {
     border-radius: 32px;
     font-size: 48px;
     width: 500px;
+    height: 160px;
   }
 
   #guessSubmit, #startOver {
     border-radius: 32px;
     font-size: 48px;
-    width: 500px;
+    width: 600px;
+    height: 120px;
   }
 }
 
@@ -170,8 +172,8 @@ p {
 
 @media screen and (min-height: 1600px) {
   img {
-    max-width: 60vh;
-    max-height: 25vh;
+    max-width: 60%;
+    max-height: 25%;
     margin-bottom: 2%;
     border-radius: 32px;
   }
