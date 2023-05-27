@@ -45,7 +45,7 @@ input {
 
 .header {
   display: flex;
-  padding: 2vh 8vh;
+  padding: 2vh 4vh;
   justify-content: flex-end;
 }
 
@@ -101,9 +101,13 @@ p {
   padding: 3px;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (min-height: 1800px) {
   .header, .footer, a {
       height: 70px;
-      font-size: 24px;
+      font-size: 32px;
+  }
+  .header {
+    padding: 4vh 6vh;
+    background-color: #3882f6;
   }
 }
