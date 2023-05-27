@@ -16,13 +16,13 @@
     </div>
 
     <div class="content">
-      <img src="./assets/images/numbers.jpg" alt="Numbers on a blurred background.">
+      <img src="./assets/images/numbers.jpg" alt="Image of many different numbers.">
       <div class="instructions">
         I have selected a random number between 1 and 100. Can you can guess it in 7 turns or fewer? You'll know if your guess was too high or too low.
       </div>
       <div class="form">
         <label for="guessField">Enter a guess: </label>
-        <input type="text" min="1" max="100" required id="guessField" class="guessField" onKeyDown="if(event.keyCode==13) clickSubmit()" ;>
+        <input type="number" min="1" max="100" required id="guessField" class="guessField" onKeyDown="if(event.keyCode==13) clickSubmit()" ;>
         <div class="buttons">
           <input type="submit" value="Submit guess" id="guessSubmit" class="guessSubmit">
           <input type="submit" value="Start over" id="startOver" onclick="resetGame();">
@@ -48,7 +48,6 @@
       const guessSubmit = document.querySelector('.guessSubmit');
       const guessField = document.querySelector('.guessField');
       let guessCount = 1;
-      //let resetButton;
 
       function checkGuess() {
         const userGuess = Number(guessField.value);
@@ -91,10 +90,6 @@
       function setGameOver() {
         guessField.disabled = true;
         guessSubmit.disabled = true;
-        //resetButton = document.createElement('button');
-        //resetButton.textContent = 'Start over';
-        //document.body.appendChild(resetButton);
-        //resetButton.addEventListener('click', resetGame);
       }
 
       function resetGame() {
@@ -103,8 +98,8 @@
         for (const resetPara of resetParas) {
           resetPara.textContent = '';
         }
+      
 
-        //resetButton.parentNode.removeChild(resetButton);
         guessField.disabled = false;
         guessSubmit.disabled = false;
         guessField.value = '';
