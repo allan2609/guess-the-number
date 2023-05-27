@@ -45,17 +45,17 @@ input {
 
 .header {
   display: flex;
-  padding: 2vh;
+  padding: 1vh;
   justify-content: flex-end;
 }
 
 .footer {
   display: flex;
-  padding: 2vh;
+  padding: 1.5vh;
   justify-content: center;
   color: #E5E7EB;
   background-color: #3882f6;
-  font-size: 1em;
+  font-size: 3vh;
 }
 
 .instructions {
@@ -68,7 +68,7 @@ input {
 
 a {
   text-decoration: none;
-  font-size: 1em;
+  font-size: 3vh;
   color: gray;
 }
 
