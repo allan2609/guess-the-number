@@ -85,7 +85,7 @@ a {
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   gap: 2vh;
 }
@@ -140,28 +140,23 @@ p {
     gap: 12px;
     padding: 12px;
   }
-}
 
-@media screen and (min-height: 1500px) {
   .header {
     background-color: #3882f6;
     padding-right: 5vh;
   }
-}
 
-@media screen and (min-height: 1500px) {
   a {
     font-size: 48px;
     color: #E5E7EB;
   }
-}
 
-@media screen and (min-height: 1500px) {
   .form {
     border-radius: 32px;
     font-size: 48px;
     gap: 12%;
     align-items: center;
+    margin-bottom: 20px;
   }
 
   #guessField {
@@ -184,19 +179,15 @@ p {
     width: 200px;
     height: 90px;
   }
-}
 
-@media screen and (min-height: 1500px) {
   p {
     font-size: 48px;
   }
-}
 
-@media screen and (min-height: 1500px) {
   img {
-    max-width: 65%;
-    max-height: 17%;
+    width: 70vh;
+    height: 20vh;
     margin: 0px;
-    border-radius: 64px;
+    border-radius: 48px;
   }
 }
