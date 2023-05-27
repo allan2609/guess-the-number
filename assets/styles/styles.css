@@ -13,7 +13,7 @@ input::-webkit-outer-spin-button,
         -moz-appearance: textfield;
         /* Firefox */
       }
-      
+
 body {
   height: 100%;
   font-family: Roboto, sans-serif;
@@ -201,7 +201,7 @@ p {
   img {
     height: auto;
     width: auto;
-    margin: 0px;
+    margin-top: 1vh;
     border-radius: 48px;
   }
 }
