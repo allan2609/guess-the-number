@@ -189,5 +189,6 @@ p {
     max-height: 20%;
     margin: 0px;
     border-radius: 48px;
+    position: absolute;
   }
 }
