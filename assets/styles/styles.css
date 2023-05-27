@@ -57,6 +57,7 @@ input {
   color: #E5E7EB;
   background-color: #3882f6;
   font-size: 3vh;
+  position: sticky;
 }
 
 .instructions {
@@ -86,6 +87,10 @@ a {
 
 .form input[type="number"] {
   width: 200px;
+}
+
+#guessSubmit, #startOver {
+  align-content: center;
 }
 
 p {
