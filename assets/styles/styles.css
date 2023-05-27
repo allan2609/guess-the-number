@@ -13,7 +13,7 @@ body {
 }
 
 img {
-  width: 70vh;
+  width: 60vh;
   height: 25vh;
   margin-bottom: 2%;
   border-radius: 16px;
@@ -103,47 +103,74 @@ p {
 
 @media screen and (min-height: 1600px) {
   .header, .footer {
-      height: 70px;
-      font-size: 32px;
+      height: 50px;
+      font-size: 48px;
+  }
+
+  input {
+    border: 2px solid #ddd;
+    border-radius: 32px;
+    padding: 12px 24px;
+    width: 300px;
+  }
+
+  .instructions {
+    font-weight: 800;
+    max-width: 80vh;
+    font-size: 48px;
   }
 }
 
 @media screen and (min-height: 1600px) {
   .header {
     background-color: #3882f6;
+    padding-right: 9vh;
   }
 }
 
 @media screen and (min-height: 1600px) {
   a {
-    font-size: 32px;
+    font-size: 48px;
+    color: #E5E7EB;
   }
 }
 
 @media screen and (min-height: 1600px) {
   .buttons input {
-    font-size: 32px;
+    font-size: 48px;
   }
 }
 
 @media screen and (min-height: 1600px) {
   .form {
-    border-radius: 16px;
-    font-size: 32px;
-    gap: 10px;
+    border-radius: 32px;
+    font-size: 48px;
+    gap: 12%;
     align-items: center;
+  }
+
+  .guessField {
+    border-radius: 32px;
+    font-size: 48px;
+    width: 500px;
+  }
+
+  #guessSubmit, #startOver {
+    border-radius: 32px;
+    font-size: 48px;
+    width: 500px;
   }
 }
 
 @media screen and (min-height: 1600px) {
   p {
-    font-size: 24px;
+    font-size: 48px;
   }
 }
 
 @media screen and (min-height: 1600px) {
   img {
-    max-width: 75vh;
+    max-width: 60vh;
     max-height: 25vh;
     margin-bottom: 2%;
     border-radius: 32px;
