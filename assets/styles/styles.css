@@ -102,12 +102,38 @@ p {
 }
 
 @media screen and (min-height: 1800px) {
-  .header, .footer, a {
+  .header, .footer {
       height: 70px;
       font-size: 32px;
   }
+
   .header {
-    padding: 4vh 6vh;
     background-color: #3882f6;
+  }
+
+  a {
+    font-size: 32px;
+  }
+
+  .buttons input {
+    font-size: 32px;
+  }
+
+  .form {
+    border-radius: 16px;
+    font-size: 32px;
+    gap: 10px;
+    align-items: center;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  img {
+    width: 50%;
+    height: 25%;
+    margin-bottom: 2%;
+    border-radius: 32px;
   }
 }
