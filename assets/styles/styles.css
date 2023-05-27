@@ -185,10 +185,9 @@ p {
   }
 
   img {
-    max-width: 60%;
-    max-height: 20%;
+    height: auto;
+    width: auto;
     margin: 0px;
     border-radius: 48px;
-    position: absolute;
   }
 }
