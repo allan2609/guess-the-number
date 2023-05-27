@@ -101,7 +101,7 @@ p {
   padding: 3px;
 }
 
-@media screen and (min-height: 1800px) {
+@media screen and (min-height: 1600px) {
   .header, .footer {
       height: 70px;
       font-size: 32px;
@@ -131,8 +131,8 @@ p {
   }
 
   img {
-    width: 50%;
-    height: 25%;
+    max-width: 75vh;
+    max-height: 25vh;
     margin-bottom: 2%;
     border-radius: 32px;
   }
