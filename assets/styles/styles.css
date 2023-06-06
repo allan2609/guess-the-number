@@ -33,7 +33,7 @@ img {
   aspect-ratio: 43/23;
   max-width: 100vw;
   max-height: 60vh;
-  border-radius: 16px;
+  border-radius: 10px;
 }
 
 .form {
@@ -88,7 +88,6 @@ input {
 
 .instructions {
   font-weight: 800;
-  margin-bottom: 2vh;
   max-width: 600px;
   text-align: center;
   font-size: 18px;
@@ -129,11 +128,18 @@ p {
 
 .lastResult {
   color: white;
-  padding: 3px;
+  align-items: center;
+  padding: 6px;
+  border-radius: 6px;
 }
 
 .resultParas {
   margin-bottom: 1.5vh;
+  font-size: 18px;
+}
+
+.lowOrHi {
+  align-items: center;
 }
 
 @media screen and (min-height: 1500px) {
