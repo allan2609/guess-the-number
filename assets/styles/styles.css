@@ -164,7 +164,6 @@ p {
   .buttons {
     display: flex;
     width: 80%;
-    gap: 12px;
     padding: 12px;
   }
 
@@ -179,9 +178,9 @@ p {
   .form {
     border-radius: 32px;
     font-size: 48px;
-    gap: 12%;
+    gap: 1%;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: -1vh;
   }
 
   #guessField {
